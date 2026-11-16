@@ -21,6 +21,10 @@ This post walks through seven places where there is a gap between "your server w
 
 **One figure for scale.** On 16 November 2026 (counted at 14:58 UTC), **968 of the 33,455 paid routes** in the public Bazaar catalogue (2.9%, from about 35 sellers) listed a pay-by-use payment option called `upto`. Pay-by-use is the kind of pricing where the gap matters most (check 7). The figure counts routes that listed the option, nothing more.
 
+## What an outside scan can and cannot see
+
+Automated scanners for x402 sellers already exist, and they are cheap: some are free, and others cost a few cents a check. They send your route an unpaid request and read what comes back: the `402` reply, its headers, and how your route is listed in public catalogues. That is useful, because it shows whether a buyer can find you and pay you at all. By their own descriptions, these scanners do not pay, so they do not see what happens after a payment is presented. That is where the problems in this post sit: one payment delivering twice, content going out before the money has settled, and a payment for one route unlocking another. Only a test that presents real test payments, with a test wallet on your own copy, can show those. The self-check below is that second kind of test. It does not replace an outside scan, and an outside scan does not replace it.
+
 ## Why I wrote this
 
 I'm dabsfv, based in the UK. I build with AI tools, and I'm looking into whether there's a useful tool or service to build for people selling through x402. I read the research on how x402 payments can go wrong and have written it up in plain English. I'm not asking you to buy anything. At the end there is one question for you.
